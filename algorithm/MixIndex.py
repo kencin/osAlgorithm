@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-  
 # osAlgorithm - MixIndex.py
-# 2018/12/16 10:51
+# 2018/12/22 10:51
 # Author:Kencin <myzincx@gmail.com>
 
 # 三级混合索引

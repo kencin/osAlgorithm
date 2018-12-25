@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-  
 # osAlgorithm - DiskSstf.py
-# 2018/12/22 11:49
+# 2018/12/16 11:49
 # Author:Kencin <myzincx@gmail.com>
 
 # 最短寻道时间优先算法
