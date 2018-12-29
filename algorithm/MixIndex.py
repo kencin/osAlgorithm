@@ -26,11 +26,10 @@ class MixIndex(object):
         tmp = self.blocks[0:5]  # 先把0-4号盘块存起来
         for i in range(len(tmp)):
             self.blocks.pop(0)
-        self.blocks = [self.blocks[i:i+8] for i in range(len(self.blocks)) if i % 8 is 0]
         while len(self.blocks) > 1:
+            self.blocks = [self.blocks[i:i + 8] for i in range(len(self.blocks)) if i % 8 is 0]
             tmp.append(self.blocks[0])
             self.blocks.pop(0)
-            self.blocks = [self.blocks[i:i + 8] for i in range(len(self.blocks)) if i % 8 is 0]
         for i in range(len(tmp)):
             self.blocks.insert(0, tmp[len(tmp)-1-i])
 
@@ -38,6 +37,7 @@ class MixIndex(object):
         while address > self.file_size:
             print("地址超出文件范围！应在0到%d" % self.file_size)
             address = input("请重新输入：")
+            address = int(address)
         the_block = int(address / 16) if address % 16 is 0 else int(address / 16) + 1
         # print("%d在第%d个盘块" % (address, the_block))
         # if the_block <= 5:

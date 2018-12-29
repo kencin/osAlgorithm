@@ -28,17 +28,17 @@ if __name__ == '__main__':
     # print(scan_result)
 
     # 混合索引测试
-    # mix_index = al.MixIndex.MixIndex(100 * 16)
-    # mix_index.generate_mix_index()
-    # mix_index.show_blocks()
-    # address = input("请输入要查找的地址：")
-    # mix_index.find_block(int(address))
+    mix_index = al.MixIndex.MixIndex(800 * 16)
+    mix_index.generate_mix_index()
+    mix_index.show_blocks()
+    address = input("请输入要查找的地址：")
+    mix_index.find_block(int(address))
 
     # 银行家算法测试
-    banker = al.banker.Banker()
-    banker.make_bank()
-    banker.is_safe()
-    print(banker.safe)
-    banker.pre_allocation()
-    print(banker.safe)
+    # banker = al.banker.Banker()
+    # banker.make_bank()
+    # banker.is_safe()
+    # print(banker.safe)
+    # banker.pre_allocation()
+    # print(banker.safe)
 
